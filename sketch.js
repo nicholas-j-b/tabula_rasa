@@ -8,6 +8,7 @@ class Sketch {
     constructor(canvas, ctx) {
         this.canvas = canvas;
         this.ctx = ctx;
+        //this.thing = new Thing(ctx)
         var self = this;
         setInterval(function() {self.update(self)}, 1000 / Config.ANIMATION.fps);
     }
